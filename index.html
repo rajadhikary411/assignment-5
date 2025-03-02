@@ -9,12 +9,45 @@
 </head>
 <body class="bg-gray-200 px-40 pt-6 pb-16 font-poppins">
       <header>
-              <nav class="flex bg-white p-4 rounded-2xl">
+              <nav class="flex bg-white p-4 rounded-2xl justify-between items-center">
                 <div class="flex justify-between items-center gap-2">
                     <div><img src="./assets/logo.png" alt=""></div>
                     <h1 class="text-2xl">Dev <span class="font-bold">Board</span></h1>
                 </div>
+                <div class="flex gap-5 justify-between items-center">
+                   <div class="w-24 h-10 bg-gray-200 rounded-2xl flex justify-around items-center p-1"><img src="./assets/checkbox.png" alt="">
+                    <h3 class=" font-bold text-2xl">24</h3>
+                   </div>
+                   <div><img id="theme-btn" src="./assets/theme-btn.png" alt="" onclick="changeTheme()" class="rotate-45 cursor-pointer"></div>
+                </div>
               </nav>
+              
+              <main>
+                
+              </main>
+
       </header>
+
+      <script>
+         let rotateDegree = 45; // Initial rotation degree
+
+         function getRandomColor() {
+            const colors = ['#FF6347', '#4CAF50', '#00BFFF', '#FFD700', '#8A2BE2', '#FF1493', '#FF4500'];
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            return colors[randomIndex];
+        }
+
+        function changeTheme() {
+            // Change background color
+            document.body.style.backgroundColor = getRandomColor();
+
+            // Rotate the image
+            rotateDegree += 45; // Increase the degree by 45
+            if (rotateDegree >= 360) rotateDegree = 0; // Reset to 0 when it reaches 360
+
+            // Apply the rotation to the image
+            document.getElementById('theme-btn').style.transform = `rotate(${rotateDegree}deg)`;
+        }
+      </script>
 </body>
 </html>
