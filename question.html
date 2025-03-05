@@ -4,13 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <div>
-        <h1>5</h1>
-        <button>complete1</button>
-        <button>complete2</button>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
 
-    </div>
+</head>
+<body class="bg-gray-200 px-40 pt-6 pb-16 font-poppins ">
+    <header>
+        <nav class="flex bg-white p-4 rounded-2xl justify-between items-center">
+          <div class="flex justify-between items-center gap-2">
+              <div><img src="./assets/logo.png" alt=""></div>
+              <h1 class="text-2xl">Dev <span class="font-bold">Board</span></h1>
+          </div>
+          <div>
+                <button class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg hover:bg-blue-800" onClick="gotoDesk()">Back to Desk</button>
+          </div>
+        </nav>
+    </header>
+      <main>
+        <h1 class="text-center font-bold text-2xl mt-2 ">Blogs</h1>
+        <div class="bg-white rounded-lg p-4 mt-5">
+            <div class="border-b-2 border-gray-300 border-dotted pb-2">
+                <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            </div>
+            <h1 class="mt-2 text-gray-500">To select elements in the DOM, methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll() are used. These methods allow you to select elements by their ID, class, tag, or CSS selector.</h1>
+        </div>
+        <div class="bg-white rounded-lg p-4 mt-5">
+            <div class="border-b-2 border-gray-300 border-dotted pb-2">
+                <h1>- Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+
+            </div>
+            <h1 class="mt-2 text-gray-500">innerHTML returns or sets the HTML content inside an element, including HTML tags.
+                innerText returns or sets the visible text content, excluding hidden elements and styles.
+                textContent returns or sets all text, including hidden elements, but without interpreting HTML tags.</h1>
+        </div>
+        <div class="bg-white rounded-lg p-4 mt-5">
+            <div class="border-b-2 border-gray-300 border-dotted pb-2">
+                <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            </div>
+            <h1 class="mt-2 text-gray-500">Elements in the DOM can be selected using methods like getElementById() for selecting by ID, getElementsByClassName() for selecting by class name, and querySelector() or querySelectorAll() for selecting by CSS selectors</h1>
+        </div>
+        <div class="bg-white rounded-lg p-4 mt-5">
+            <div class="border-b-2 border-gray-300 border-dotted pb-2">
+                <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            </div>
+            <h1 class="mt-2 text-gray-500"> select elements in the DOM using methods like getElementById() for ID selection, getElementsByClassName() for class selection, and querySelector() or querySelectorAll() for more flexible CSS selector-based selection</h1>
+        </div>
+        <div class="bg-white rounded-lg p-4 mt-5">
+            <div class="border-b-2 border-gray-300 border-dotted pb-2">
+                <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+
+            </div>
+            <h1 class="mt-2 text-gray-500">Elements in the DOM can be selected using methods like getElementById() for selecting by ID, getElementsByClassName() for selecting by class, and querySelector() or querySelectorAll() for selecting using CSS selectors.</h1>
+        </div>
+      </main>
+    <script>
+        function gotoDesk() {
+            window.location.href = "index.html"; // Replace with your desired URL
+        }
+    </script>
 </body>
 </html>
