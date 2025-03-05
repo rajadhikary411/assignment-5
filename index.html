@@ -34,9 +34,9 @@
                             <h1 class="font-bold text-2xl">05</h1>
                         </div>
                     </div>
-                    <div class="col-span-2 bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 rounded-xl flex justify-start  items-center gap-6 pl-6">
+                    <div class="col-span-2 bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 rounded-xl flex justify-start  items-center gap-5 pl-6">
                         <div><img src="./assets/board.png" alt=""></div>
-                        <h1 class="font-bold text-white">Discover Something <br> New Today!</h1>
+                        <h1 class="font-bold text-white text-[19px]"><a href="question.html">Discover Something New Today!</a></h1>
                     </div>
                     <div class="bg-blue-50 rounded-xl p-7 flex gap-4 items-center">
                         <div class="bg-white h-10 flex justify-center items-center p-2 rounded-full"><img src="./assets/calender.png" alt=""></div>
@@ -61,7 +61,8 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div><button id="myButton1" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg" onclick="disableButton1()">Completed</button>
+
                         </div>
                   
                       </div>
@@ -76,7 +77,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div> <button id="myButton2" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton2()">Completed</button>
                         </div>
                   
                       </div>
@@ -92,7 +93,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div> <button id="myButton3" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton3()">Completed</button>
                         </div>
                   
                       </div>
@@ -108,7 +109,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div> <button id="myButton4" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton4()">Completed</button>
                         </div>
                   
                       </div>
@@ -124,7 +125,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div> <button id="myButton5" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton5()">Completed</button>
                         </div>
                   
                       </div>
@@ -140,7 +141,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton()">Completed</button>
+                              <div> <button id="myButton6" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton6()">Completed</button>
                         </div>
                   
                       </div>
@@ -159,11 +160,15 @@
                             <h1 class="font-bold text-gray-500">Activity Log</h1>
                         </div>
                    </div>
-                   <div><button class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg mt-4">Clear History</button></div>
-                   
+                   <div><button class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg mt-4" onclick="deleteText()">Clear History</button>
+                   </div>
+                   <h1 id="text1"></h1>
+                   <h1 id="text2"></h1>
+                   <h1 id="text3"></h1>
+                   <h1 id="text4"></h1>
+                   <h1 id="text5"></h1>
+                   <h1 id="text6"></h1>
                 </div>
-
- 
 
               </main>
 
@@ -171,32 +176,64 @@
 
       <script>
         // disabbled buttn
-        function disableButton() {
-        const button = document.getElementById("myButton");
-        button.disabled = true; // বাটনটি ডিজেবল করা হলো
+        function disableButton1() {
+          setInCache1();
+        const button = document.getElementById("myButton1");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
     }
-        // show the date
+        function disableButton2() {
+          setInCache2();
+        const button = document.getElementById("myButton2");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
+    }
+        function disableButton3() {
+          setInCache3();
+        const button = document.getElementById("myButton3");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
+    }
+        function disableButton4() {
+          setInCache4();
+        const button = document.getElementById("myButton4");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
+    }
+        function disableButton5() {
+          setInCache5();
+        const button = document.getElementById("myButton5");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
+    }
+        function disableButton6() {
+        setInCache6();
+        const button = document.getElementById("myButton6");
+        button.disabled = true; 
+        button.style.backgroundColor='#ADD8E6';
+    }
+   
         function showDateAndDay() {
-            const currentDate = new Date(); // Get the current date
+            const currentDate = new Date(); 
             
-            const day = currentDate.getDate(); // Get day of the month
-            const month = currentDate.toLocaleString('default', { month: 'short' }); // Get month as short name (e.g. "Jul")
-            const year = currentDate.getFullYear(); // Get full year (yyyy)
+            const day = currentDate.getDate(); 
+            const month = currentDate.toLocaleString('default', { month: 'short' }); 
+            const year = currentDate.getFullYear();
 
             const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            const dayOfWeek = daysOfWeek[currentDate.getDay()]; // Get the name of the day
+            const dayOfWeek = daysOfWeek[currentDate.getDay()]; 
 
-            const dateString = `${month} ${day} ${year}`; // Format the date as "Jul 27, 2025"
-            const dayString = `${dayOfWeek},`; // Format the day
+            const dateString = `${month} ${day} ${year}`; 
+            const dayString = `${dayOfWeek},`; 
 
-            // Show the date and the day in the HTML
+            
             document.getElementById('date').innerText = dateString;
             document.getElementById('day').innerText = dayString;
         }
 
         window.onload = showDateAndDay;
-        // end the day show option
-         let rotateDegree = 45; // Initial rotation degree
+      
+         let rotateDegree = 45; 
 
          function getRandomColor() {
             const colors = ['#FF6347', '#4CAF50', '#00BFFF', '#FFD700', '#8A2BE2', '#FF1493', '#FF4500'];
@@ -205,16 +242,114 @@
         }
 
         function changeTheme() {
-            // Change background color
+          
             document.body.style.backgroundColor = getRandomColor();
 
-            // Rotate the image
-            rotateDegree += 45; // Increase the degree by 45
-            if (rotateDegree >= 360) rotateDegree = 0; // Reset to 0 when it reaches 360
+            
+            rotateDegree += 45; 
+            if (rotateDegree >= 360) rotateDegree = 0; 
 
-            // Apply the rotation to the image
+          
             document.getElementById('theme-btn').style.transform = `rotate(${rotateDegree}deg)`;
         }
+        function setInCache2() {
+    const jobText = "You have Completed Add Dark Mode at "; 
+    
+   
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text2"); 
+
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+        function setInCache3() {
+    const jobText = "You have Completed Optimize Home page at "; 
+    
+   
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text3"); 
+
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+        function setInCache1() {
+    const jobText = "You have Completed Fix Mobile Button Issue at "; 
+    
+   
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text1"); 
+
+ 
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+   
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+        function setInCache4() {
+    const jobText = "You have Add new emoji 🤲 at "; 
+    
+    
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text4"); 
+
+    
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+    
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+        function setInCache5() {
+    const jobText = "You have Completed Integrate OpenAI API at "; 
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text5"); 
+
+    
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+    
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+        function setInCache6() {
+    const jobText = "You have Completed Improve Job Searching at "; 
+    
+    
+    const currentTime = new Date().toLocaleTimeString(); 
+
+    const textElement = document.getElementById("text6"); 
+
+    
+    textElement.innerText = `${jobText} - ${currentTime}`;
+
+    
+    textElement.classList.add("bg-blue-50", "p-2", "rounded-lg", "m-2");
+}
+
+function deleteText() {
+    
+    const textElements = document.querySelectorAll("#text1, #text2, #text3, #text4, #text5, #text6");
+    
+  
+    textElements.forEach(function(element) {
+        element.innerText = "";  
+        element.classList.remove("bg-blue-50", "p-2", "rounded-lg", "m-2");  
+    });
+}
+
+
+
       </script>
 </body>
 </html>
