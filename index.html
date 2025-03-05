@@ -16,7 +16,7 @@
                 </div>
                 <div class="flex gap-5 justify-between items-center">
                    <div class="w-24 h-10 bg-gray-200 rounded-2xl flex justify-around items-center p-1"><img src="./assets/checkbox.png" alt="">
-                    <h3 class=" font-bold text-2xl">24</h3>
+                    <h3 class=" font-bold text-2xl"id="count1">23</h3>
                    </div>
                    <div><img id="theme-btn" src="./assets/theme-btn.png" alt="" onclick="changeTheme()" class="rotate-45 cursor-pointer"></div>
                 </div>
@@ -31,7 +31,7 @@
                         <div class="bg-white h-10 flex justify-center items-center p-2 rounded-full"><img src="./assets/checkbox.png" alt=""></div>
                         <div>
                             <h3 class="text-gray-500 text-xs">Task Assigned</h3>
-                            <h1 class="font-bold text-2xl">05</h1>
+                            <h1 class="font-bold text-2xl"id="count">6</h1>
                         </div>
                     </div>
                     <div class="col-span-2 bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 rounded-xl flex justify-start  items-center gap-5 pl-6">
@@ -42,7 +42,7 @@
                         <div class="bg-white h-10 flex justify-center items-center p-2 rounded-full"><img src="./assets/calender.png" alt=""></div>
                         <div>
                             <h3 class="text-gray-500" id="day"></h3>
-                            <h1 class="font-bold"id="date"></h1>
+                            <h1 class="font-bold text-[14px]"id="date"></h1>
                         </div>
                     
                     </div>
@@ -61,7 +61,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div><button id="myButton1" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg" onclick="disableButton1()">Completed</button>
+                              <div><button id="myButton1" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg" onclick="disableButton1();decreaseCount();increaseCount()">Completed</button>
 
                         </div>
                   
@@ -75,9 +75,9 @@
                         <div class="flex justify-between items-center mt-4">
                             <div>
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
-                                <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
+                                <h1 class="font-bold text-[12px]">25 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton2" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton2()">Completed</button>
+                              <div> <button id="myButton2" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton2();decreaseCount();increaseCount()">Completed</button>
                         </div>
                   
                       </div>
@@ -91,9 +91,9 @@
                         <div class="flex justify-between items-center mt-4">
                             <div>
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
-                                <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
+                                <h1 class="font-bold text-[12px]">31 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton3" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton3()">Completed</button>
+                              <div> <button id="myButton3" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton3();decreaseCount();increaseCount()">Completed</button>
                         </div>
                   
                       </div>
@@ -109,7 +109,7 @@
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
                                 <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
                               </div>
-                              <div> <button id="myButton4" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton4()">Completed</button>
+                              <div> <button id="myButton4" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton4();decreaseCount();increaseCount()">Completed</button>
                         </div>
                   
                       </div>
@@ -123,9 +123,9 @@
                         <div class="flex justify-between items-center mt-4">
                             <div>
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
-                                <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
+                                <h1 class="font-bold text-[12px]">01 April 2025</h1></div>
                               </div>
-                              <div> <button id="myButton5" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton5()">Completed</button>
+                              <div> <button id="myButton5" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton5();decreaseCount();increaseCount()">Completed</button>
                         </div>
                   
                       </div>
@@ -139,9 +139,9 @@
                         <div class="flex justify-between items-center mt-4">
                             <div>
                                 <div><h3 class="text-gray-400 text-[10px]">Deadline</h3>
-                                <h1 class="font-bold text-[12px]">21 March 2025</h1></div>
+                                <h1 class="font-bold text-[12px]">5 May 2025</h1></div>
                               </div>
-                              <div> <button id="myButton6" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton6()">Completed</button>
+                              <div> <button id="myButton6" class="bg-blue-500 text-white font-semibold py-3 px-5 rounded-lg w-full" onclick="disableButton6();decreaseCount();increaseCount()">Completed</button>
                         </div>
                   
                       </div>
@@ -177,36 +177,46 @@
       <script>
         // disabbled buttn
         function disableButton1() {
+          alert("Board updated Successfully");
           setInCache1();
         const button = document.getElementById("myButton1");
         button.disabled = true; 
         button.style.backgroundColor='#ADD8E6';
     }
         function disableButton2() {
+          alert("Board updated Successfully");
           setInCache2();
         const button = document.getElementById("myButton2");
         button.disabled = true; 
         button.style.backgroundColor='#ADD8E6';
     }
         function disableButton3() {
+          alert("Board updated Successfully");
           setInCache3();
         const button = document.getElementById("myButton3");
         button.disabled = true; 
         button.style.backgroundColor='#ADD8E6';
     }
         function disableButton4() {
+          alert("Board updated Successfully");
+
           setInCache4();
         const button = document.getElementById("myButton4");
         button.disabled = true; 
         button.style.backgroundColor='#ADD8E6';
     }
         function disableButton5() {
+          alert("Board updated Successfully");
+
           setInCache5();
         const button = document.getElementById("myButton5");
         button.disabled = true; 
         button.style.backgroundColor='#ADD8E6';
     }
         function disableButton6() {
+          alert("Board updated Successfully");
+          alert("congrates!!! You have completed all the current task");
+
         setInCache6();
         const button = document.getElementById("myButton6");
         button.disabled = true; 
@@ -347,8 +357,16 @@ function deleteText() {
         element.classList.remove("bg-blue-50", "p-2", "rounded-lg", "m-2");  
     });
 }
-
-
+function decreaseCount() {
+            const countElement = document.getElementById('count');
+            let currentCount = parseInt(countElement.innerText);
+            countElement.innerText = currentCount - 1; // Decrease count by 1
+        }
+  function increaseCount() {
+            const countElement = document.getElementById('count1');
+            let currentCount = parseInt(countElement.innerText);
+            countElement.innerText = currentCount + 1; // Decrease count by 1
+        }
 
       </script>
 </body>
